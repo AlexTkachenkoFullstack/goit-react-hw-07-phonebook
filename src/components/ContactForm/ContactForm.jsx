@@ -27,21 +27,21 @@ const FormError = ({name}) => {
     
 
 function ContactForm() {
-    const dispatch = useDispatch()
-    const contacts = useSelector(getContacts)
-    const handleAdd = (values, actions) => {
-        if(contacts.some(({name})=>name===values.name)){
-            alert(`${values.name} is already in contacts`)
-            return
-    } 
-        dispatch(addContact({ ...values, id: nanoid() }))
-        actions.resetForm()
-}
+//     const dispatch = useDispatch()
+//     const contacts = useSelector(getContacts)
+//     const handleAdd = (values, actions) => {
+//         if(contacts.some(({name})=>name===values.name)){
+//             alert(`${values.name} is already in contacts`)
+//             return
+//     } 
+//         // dispatch(addContact({ ...values, id: nanoid() }))
+//         actions.resetForm()
+// }
 
 
     return (<Formik
                 initialValues={initialValue}
-                onSubmit={handleAdd}
+                // onSubmit={handleAdd}
                 validationSchema={schame}
             >
                 <FormContainer autoComplete="off">

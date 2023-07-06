@@ -12,6 +12,7 @@ border-radius: 10px;
 width: 500px;
 height: auto;
 padding: 20px;
+opacity: 0.9;
 `
 export const FormLabelName = styled.label`
 font-size: 30px;

@@ -11,7 +11,7 @@ justify-content: space-between
 `
 
 export const ContactListItemText = styled.p`
-font-size24px;
+font-size20px;
 margin-right: 15px;
 margin-top:0;
 margin-bottom:5px;
@@ -23,6 +23,7 @@ justify-content: center;
 width: 100px;
 height: 35px;
 font-size: 24px;
+opacity:0.8;
 
 &:hover, &:focus{
 

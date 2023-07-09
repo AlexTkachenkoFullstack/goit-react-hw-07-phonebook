@@ -42,6 +42,7 @@ export const contactsSlice = createSlice({
   initialState,
 
   extraReducers: (builder) => {
+    // функция extraReducers принимает объект builder, который предоставляет методы для добавления дополнительных редюсеров
     builder
       // .addCase(fetchContacts.pending, handlePending)
       .addCase(fetchContacts.fulfilled, handleFulfilledGet)
@@ -52,6 +53,7 @@ export const contactsSlice = createSlice({
     // .addCase(deleteContact.pending, handlePending)
     .addCase(deleteContact.fulfilled, handleFulfilledDelete)
       // .addCase(deleteContact.rejected, handleRejected)
+      // функция isAnyOf используется для проверки, является ли текущее действие одним из указанных 
       .addMatcher(isAnyOf(fetchContacts.pending, addContact.pending, deleteContact.pending), handlePending)
       .addMatcher(isAnyOf(fetchContacts.rejected,addContact.rejected, deleteContact.rejected), handleRejected)
   },

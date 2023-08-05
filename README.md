@@ -1,4 +1,4 @@
-Mockapi server
+mockapi server
 
 
 # React homework template
